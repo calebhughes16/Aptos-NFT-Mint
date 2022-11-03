@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css'
+import dood from '../public/dood.gif'
 
 import { AptosClient } from "aptos";
 import { useWallet } from '@manahippo/aptos-wallet-adapter';
@@ -155,7 +156,7 @@ export default function Home() {
           <div className={styles.topcorner}>
             <ConnectWalletButton connectButton={!wallet.connected} className="d-flex" />
           </div>
-          <img src={collectionCoverUrl} />
+          <img src="./dood.gif" />
           <div id="collection-info" className="d-flex flex-column align-items-center text-white" style={{width: "80%"}}>
             {isFetchignCmData ? <Spinner animation="border" role="status" className="mt-5"><span className="visually-hidden">Loading...</span></Spinner> : 
             <>
